@@ -1,0 +1,24 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "dev": "nodemon --legacy-watch src app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "ejs": "^3.0.1",
+    "express": "^4.14.1",
+    "mongodb": "^2.2.22",
+    "mysql": "2.18.1",
+    "mysql2": "^2.1.0",
+    "nodemon": "2.0.2",
+    "sequelize": "^5.21.5",
+    "sequelize-cli": "^5.5.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

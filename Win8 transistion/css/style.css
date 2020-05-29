@@ -1,0 +1,75 @@
+.heading{
+    font-family: "Segoe UI Light";
+    font-size: 180px;
+    /* animation-name: heading_trasistion; */
+    animation-duration: 1s;
+    position: relative;
+    bottom:50px;
+   
+}
+.content{
+    font-family: "Segoe UI Light";
+    font-size: 20px;
+    /* animation-name: content_trasistion; */
+    animation-duration: 1s;
+    position:relative;
+    bottom:150px;
+    
+}
+/* Transistion animations   */
+@keyframes fadeInRight {
+  0% {
+    opacity: 1;
+    transform: translate3d(1%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+
+
+
+/* Transistion animations  */
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  /** Basic styles for an animated element */
+/** An element that fades in and slides from the right */
+ .m-scene .scene_element--fadeinright {
+  animation-name: fadeInRight;
+}
+.m-scene.is-exiting .scene_element {
+  animation-direction: alternate-reverse;
+}
+
+  
+  
+
+  /* scroll menu  */
+  div.scrollmenu {
+    
+    overflow: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer
+  }
+  
+  div.scrollmenu a {
+    /* display: inline-block; */
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  
+  
+
+  /* scroll menu  */

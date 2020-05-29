@@ -1,0 +1,156 @@
+
+*{
+    margin : 0;
+    padding : 0;
+}
+
+body{
+    /* background:rgb(125, 180, 197); */
+    font-family:Segoe UI;
+    color: white;
+    font-size: 20px;
+    
+    letter-spacing:-1px;
+    width:3981px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    overflow-x: hidden;
+    font-size: 16px;
+    overflow-y: hidden;
+    /* background-image: linear-gradient(to bottom, #a3bded 0%, #6991c7 100%);  */
+     background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 0, 0)); 
+    background-image: url("../images/bg.jpg");
+    /* background-attachment: fixed ; */
+    
+}
+
+.title_heading{
+    font-size: 54px;
+    margin:20px 0px 0px 50px;
+    font-family: 'Segoe UI Light';
+}
+.title_heading_medium{
+    font-size: 24px;
+    margin:20px 0px 0px 50px;
+   
+}
+.title_heading_small{
+    font-size: 18px;
+    margin:14px 0px 0px 40px;
+    font-family: 'Segoe UI';
+    
+    /* z-index: 1; */
+}
+.left_bar{
+    background-color: #1a4e8e;
+    height: 100%;
+    width: 500px;
+    float: left;
+    
+}
+.left_bar_list_item_image {
+    height: 50px;
+    width: 60px;
+    float: left;
+    margin:22px 0px 0px 50px;
+}
+.left_bar_list_item_content{
+    margin: 0px 0px 8px 150px;
+    width: 300px;
+}
+/* .body_content{
+
+} */
+.tile_content{
+    margin: 0px 0px 0px 50px;
+}
+.square_tile{
+    background-color:#264e8d;
+    padding: 5px 2px 2px 5px;
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin: 5px 5px 5px 5px;
+}
+.rectangle_tile{
+    /* background-color:#1785b48c; */
+    background-color:#264e8d;
+    padding: 5px 2px 2px 5px;
+    height: 150px;
+    width: 310px;
+    float: left;
+    margin: 5px 5px 5px 5px;
+    
+   
+}
+.section{
+    margin:0px;
+    bottom:0px;
+    /* width:3981px; */
+    float:left;
+    /* height:100%; */
+    margin:0px 50px 0px 50px;
+    /* background-color: #0000007a; */
+    padding-bottom: 60px;
+    
+
+}
+
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* background: transparent; make scrollbar transparent */
+    background-color:#0000007a;
+}
+ul{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.blue{
+    background-color: blue;
+    
+}
+.red{
+    transition: all 0.4s ease-out;
+    /* font-size:106px; */
+    
+}
+
+  /* 
+  nav bar
+  */
+  .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0px;
+    list-style: none;
+    background-color:#000000a8;
+    width: 100%;
+   
+    margin : 0px 0px 0px 0px;
+  }
+  .nav-link {
+    display: block;
+    padding: 0px 14% 0px 14%;
+}
+.nav-icon{
+    height: 50px;
+    width: 51px;
+}
+ul li{
+    /* font-size: 63px; */
+}
+a {
+    color: #fdfdfd;
+    text-decoration: none;
+    background-color: transparent;
+}

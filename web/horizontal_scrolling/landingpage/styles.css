@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  border: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Segoe UI Light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color:rgb(255, 255, 255);
+  background-image: url('leaf.jpg');
+  background-size: cover;
+}
+
+#time {
+  font-size: 6rem;
+  position: absolute;
+  top : 450px;
+  left : 20px;
+}
+
+
+h2 {
+  opacity: 0.6;
+}
+

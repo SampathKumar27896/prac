@@ -1,0 +1,15 @@
+version: '3'
+
+services :
+    express-mysql :
+        build : ./node-mysql
+    express-web :
+        build : ./node-web
+        ports :
+            - '3000:3000'
+        volumes:
+            - ./node-web/:/usr/src/app
+        command: nodemon --legacy-watch -e js,html app.js
+        depends_on: 
+            - express-mysql
+        restart: on-failure

@@ -1,0 +1,55 @@
+//To know the length of the string 
+string.length()
+
+//To include all headers 
+#include<bits/stdc++.h> 
+
+//To convert all characters to lower/upper case 
+transform(name1.begin(), name1.end(), name1.begin(), ::tolower);
+transform(name2.begin(), name2.end(), name2.begin(), ::toupper);
+
+//Find substring from a string 
+#include <iostream> 
+#include <string> 
+statement.find("substring") != string::npos
+string::npos -> non position 
+
+//Map
+//Defining map
+#include <iostream> 
+#include <iterator> 
+#include <map> 
+map<string, int> marks{ 
+    { "Rithvik", 78 }, 
+    { "Suraj", 91 }, { "Jessie", 100 }, 
+    { "Praveen", 99 }, { "Bisa", 84 } 
+}; 
+
+//Defining iterator for map
+map<string, int>::iterator i; 
+
+map<string, string> fruits {
+    {"apple", "red"}
+}
+map<string, string>::iterator i;
+
+//Map iteration 
+for(i = marks.begin(); i != marks.end(); i++)
+  i->first //key
+  i->second //value     
+
+//string to number 
+#include <iostream> 
+#include <string> 
+stoi(string)
+number to string 
+itos(string)
+
+//To get to know about type of variable
+#include <typeinfo>
+...
+cout << typeid(variable).name() << endl;
+
+//initialixe dynamic array 
+ int *count = new int[26];
+  fill_n(count, 26, 0);

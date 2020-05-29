@@ -1,0 +1,101 @@
+
+*{
+    margin : 0;
+    padding : 0;
+}
+
+body{
+    /* background:rgb(125, 180, 197); */
+    font-family:Segoe UI Light;
+    color: white;
+    font-size: 20px;
+    letter-spacing:-1px;
+    width:3981px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    overflow-x: hidden;
+    /* background-image: linear-gradient(to bottom, #a3bded 0%, #6991c7 100%); */
+    /* background-image: linear-gradient(to bottom right, rgb(5, 50, 68), rgb(0, 0, 0)); */
+    background-image: url("../images/plain.jpg");
+    /* background-attachment: fixed; */
+}
+
+.title_heading{
+    font-size: 104px;
+    margin:20px 0px 0px 50px;
+    z-index: 1;
+}
+.title_heading_small{
+    font-size: 74px;
+    /* margin:20px 0px 0px 50px; */
+    /* z-index: 1; */
+}
+.square_tile{
+    background-color:#194a5feb;
+    padding: 50px 20px 20px 50px;
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin: 5px 5px;
+}
+.rectangle_tile{
+    background-color:#1785b48c;
+    padding: 10px 10px 10px 10px;
+    height: 476px;
+    width: 250px;
+    float: left;
+    margin: 5px 5px;
+}
+.section{
+    margin:0px;
+    bottom:0px;
+    width:1327px;
+    float:left;
+    height:100%;
+    overflow-y: scroll;
+    background-color: #0000007a;
+    padding-bottom: 60px;
+    
+
+}
+
+.section .scroll{
+    margin:20px 0px 0px 50px;
+    width:800px;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    /* background: transparent; make scrollbar transparent */
+    background-color:#0000007a;
+}
+
+
+  /* 
+  nav bar
+  */
+  .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0px;
+    list-style: none;
+    background-color:#000000a8;
+    width: 100%;
+  }
+  .nav-link {
+    display: block;
+    padding: 0px 14% 0px 14%;
+}
+.nav-icon{
+    height: 50px;
+    width: 51px;
+}
+a {
+    color: #fdfdfd;
+    text-decoration: none;
+    background-color: transparent;
+}

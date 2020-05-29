@@ -1,0 +1,74 @@
+version: "3"
+
+services:
+
+ redisvedanguat:
+        image: redis
+        restart: on-failure
+        hostname: redisvedanguat
+        ports:
+         - "6700:6379"
+        networks:
+         - backend
+
+ rabbitmqvedanguat:
+        image: rabbitmq:3-management
+        restart: on-failure
+        hostname: rabbitmqvedanguat
+        environment:
+           RABBITMQ_ERLANG_COOKIE: "SWQOKODSQALRPCLNMEQG"
+           RABBITMQ_DEFAULT_USER: "admin"
+           RABBITMQ_DEFAULT_PASS: "4vKrF76e"
+           RABBITMQ_DEFAULT_VHOST: "/"
+        ports:
+         - "15700:15672"
+         - "5700:5672"
+        networks:
+         - backend
+
+
+ fpmvedanguat:
+        build:
+         context: ./fpm
+        volumes:
+         - /opt/lampp/htdocs:/var/www/html:rw
+         - ./supervisor:/etc/supervisor
+        ports:
+         - "9030:9000"
+        hostname: fpmvedanguat
+        networks:
+         - frontend
+         - backend
+        restart: on-failure
+        depends_on:
+         - redisvedanguat
+         - rabbitmqvedanguat
+        deploy:
+         resources:
+          limits:
+           cpus: '0.50'
+          reservations:
+           cpus: '0.25'
+
+ webvedanguat:
+        build:
+         context: ./web
+        ports:
+         - "80:80"
+        volumes:
+         - ./conf.d:/etc/nginx/conf.d
+         - /opt/lampp/htdocs:/var/www/html:rw
+        hostname: webvedanguat
+        networks:
+         - frontend
+         - backend
+        depends_on:
+         - fpmvedanguat
+         - redisvedanguat
+         - rabbitmqvedanguat
+        restart: on-failure
+
+networks:
+ frontend:
+ backend:
+
