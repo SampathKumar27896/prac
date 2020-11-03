@@ -8,6 +8,12 @@ string.length()
 transform(name1.begin(), name1.end(), name1.begin(), ::tolower);
 transform(name2.begin(), name2.end(), name2.begin(), ::toupper);
 
+//Comparing two strings
+string1.compare(string2)
+It returns a negative value if string1 is less than second string, returns 0 when the two strings are equal
+and returns value greater than 0 if the first string is greater than the second
+
+
 //Find substring from a string 
 #include <iostream> 
 #include <string> 
