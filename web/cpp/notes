@@ -13,6 +13,10 @@ string1.compare(string2)
 It returns a negative value if string1 is less than second string, returns 0 when the two strings are equal
 and returns value greater than 0 if the first string is greater than the second
 
+//To find the absolute value of the given number 
+abs(number)
+eg:- abs(-5) = 5
+
 
 //Find substring from a string 
 #include <iostream> 
