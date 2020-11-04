@@ -29,6 +29,10 @@ string::npos -> non position
 //Returns the characters from the start_position to the position before the given end_position
 string substring = string.substr(start_position, end_position)
 
+//Erase the substring from the given string 
+//Erases the characters form the start_position to the position before the given end_positoin
+string.erase(start_position, end_position)
+
 //Map
 //Defining map
 #include <iostream> 
