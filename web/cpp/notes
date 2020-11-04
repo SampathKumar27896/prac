@@ -19,6 +19,7 @@ eg:- abs(-5) = 5
 
 
 //Find substring from a string 
+//string.find() returns the position of the first occurence of the given substring 
 #include <iostream> 
 #include <string> 
 statement.find("substring") != string::npos
