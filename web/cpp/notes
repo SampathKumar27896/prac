@@ -33,6 +33,40 @@ string substring = string.substr(start_position, end_position)
 //Erases the characters form the start_position to the position before the given end_positoin
 string.erase(start_position, end_position)
 
+
+//Vector 
+#include<vector>
+vector <int> arr {
+1,3,12
+};
+//Adding element at the end of the vector
+arr.push_back(34);
+//Removing element at the end of the vector 
+arr.pop_back();
+
+//Displaying the elements of the vector
+for(int i = 0; i < arr.size(); i++) {
+    cout << arr[i];
+}
+//2-dimensional vector 
+vector <int> a {
+    { 3, 33},
+    {33, 333}
+};
+vector <int> temp;
+//Adding elements in the two dimensional vector 
+for(int i = 0; i < size; i++) {
+    temp.clear(); // clear the elements inside the temp vector during the start of each iteration
+    for(int j = 0; j < size; j++) { // iterating till the required size of the vector 
+        temp.push_back(j); // pushing the input elements inside the vector 
+        
+    }
+    a.push_back(temp); // pushing the vector inside the vector
+}
+
+
+
+
 //Map
 //Defining map
 #include <iostream> 
